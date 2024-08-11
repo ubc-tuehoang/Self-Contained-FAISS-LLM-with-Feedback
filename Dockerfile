@@ -39,26 +39,36 @@ RUN wget $DOWNLOAD_URL -O install1.sh && \
     chmod +x install1.sh && \
     ./install1.sh
 
+# Create a directory named /app
+RUN mkdir ./text_files_directory
+
+# Install dependencies
+#COPY requirements.txt .
+#RUN pip install -r requirements.txt
+
 # Command to run when the container starts
 CMD [ "echo", "Successfully installed!" ]
 
 
-########
-#> docker build -t drone_ai .
-#> docker run -it drone_ai /bin/bash
-#> docker run -it -p 11434:11434 drone_ai /bin/bash
-#app> ollama serve &
-#> OLLAMA_HOST=0.0.0.0 ollama serve &
+######## INSTRUCTION ###############
 
+#(main)> pip install -r requirements.txt
+
+#(main)> docker build -t drone_ai .
+#(main)> docker run -it -p 11434:11434 drone_ai /bin/bash
+
+#app> OLLAMA_HOST=0.0.0.0 ollama serve &
 ### WAIT for about 10 seconds before <press enter>
+
 #app> ollama list
-#> <should be empty>
+## should be empty
 
-### PULL model: llava-llama3
-#> ollama pull llava-llama3
-
-#> ollama run llava-llama3 --verbose
+#app> ollama run llama3.1 --verbose
+#(option)
 #app> ollama run mistral --verbose
-#> curl -X POST http://localhost:11434/api/generate -d '{  "model": "llama3",  "prompt":"What is water?"}'
+
+## Create NEW bash
+
+#> curl -X POST http://localhost:11434/api/generate -d '{  "model": "llama3.1",  "prompt":"What is water?"}'
 #> curl -X POST http://localhost:11434/api/generate -d '{  "model": "mistral",  "prompt":"What is water?"}'
 
