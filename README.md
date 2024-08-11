@@ -19,10 +19,32 @@ In addition, the self-contained nature of the LLM addresses critical concerns re
 ![alt text](image.png)
 
 
-### How-to Set Up a Contained LLM in GitHub Codespaces
+## How-to Set Up a Contained LLM in GitHub Codespaces
 
 - 1. Launch Github Codespaces with 16-core
 - 2. Review README and follow instructions to build and launch container
-- 3. 
+- 3.
 
+
+### Step 1: Launch OLLAMA from Docker Container drone_ai
+
+- run: OLLAMA_HOST=0.0.0.0 ollama serve &
+    - WAIT for about 10 seconds before <press enter>
+
+- run: ollama list
+    - should be empty
+
+- run: ollama run llama3.1 --verbose
+
+- run: ollama run mistral --verbose
+
+- run: ollama list
+    - should have a list of LLM
+
+### Step 2: Run python
+
+- create a new bash 
+
+- run: python ./faiss-llm-feedback.py [llm model] 
+    - ex. python ./faiss-llm-feedback.py llama3.1
 
