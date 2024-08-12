@@ -42,7 +42,7 @@ In addition, the self-contained nature of the LLM addresses critical concerns re
 - run: ollama run mistral --verbose
 
 - run: ollama list
-    - should have a list of LLM engine 
+    - should have a list of LLM engines 
 
 ### Step 2: Run python
 
