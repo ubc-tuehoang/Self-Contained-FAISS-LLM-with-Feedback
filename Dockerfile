@@ -50,7 +50,7 @@ RUN mkdir ./text_files_directory
 CMD [ "echo", "Successfully installed!" ]
 
 
-######## INSTRUCTION ###############
+######## STEPS ###############
 
 #(main)> pip install -r requirements.txt
 
@@ -68,7 +68,7 @@ CMD [ "echo", "Successfully installed!" ]
 #app> ollama run mistral --verbose
 
 ## Create NEW bash
-
+## curl commands for testing. 
 #> curl -X POST http://localhost:11434/api/generate -d '{  "model": "llama3.1",  "prompt":"What is water?"}'
 #> curl -X POST http://localhost:11434/api/generate -d '{  "model": "mistral",  "prompt":"What is water?"}'
 

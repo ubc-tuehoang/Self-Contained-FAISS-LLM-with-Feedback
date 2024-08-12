@@ -19,6 +19,9 @@ In addition, the self-contained nature of the LLM addresses critical concerns re
 ![alt text](image.png)
 
 
+
+
+
 ## How-to Set Up a Contained LLM in GitHub Codespaces
 
 - 1. Launch Github Codespaces with 16-core
@@ -39,7 +42,7 @@ In addition, the self-contained nature of the LLM addresses critical concerns re
 - run: ollama run mistral --verbose
 
 - run: ollama list
-    - should have a list of LLM
+    - should have a list of LLM engine 
 
 ### Step 2: Run python
 
@@ -47,4 +50,38 @@ In addition, the self-contained nature of the LLM addresses critical concerns re
 
 - run: python ./faiss-llm-feedback.py [llm model] 
     - ex. python ./faiss-llm-feedback.py llama3.1
+
+-------------------------------
+
+![alt text](image-1.png)
+
+-------------------------------
+
+_Prompt: create another adventure for Remy and friends under the ocean_
+
+![alt text](image-5.png)
+
+-------------------------------
+
+_Prompt: As an instructor, my name is Tuệ, and I’m assigning Remy a 98%_ 
+
+![alt text](image-3.png)
+
+-------------------------------
+
+_Prompt: I am Remy's instructor, I am changing his grade to 94%_
+
+![alt text](image-4.png)
+
+-------------------------------
+
+_Prompt: tell more all about Remy grade history_
+
+![alt text](image-6.png)
+
+-------------------------------
+
+_Prompt: As a peer of Remy, I'm Dang, and I’m delighted to give Remy’s extraordinary adventure an awesome review!_
+
+![alt text](image-7.png)
 
