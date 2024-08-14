@@ -10,16 +10,13 @@
 
 This fun-work presents a **Self-Contained LLM** POC integrating **FAISS**, Ollama's multi-model LLM, and an adaptive feedback loop, designed to enhance the efficiency and accuracy of query-driven knowledge systems. The proposed system leverages FAISS, a similarity search library, to facilitate rapid vector-based retrieval of high-dimensional data, while Ollama's language model architecture enables nuanced natural language processing across diverse contexts. The integration of a **Dynamic-Feedback-Loop** within the POC ensures continuous refinement of the knowledge base, adapting to evolving user queries and enhancing system responsiveness over time. 
 
-This exploration dives into the interplay between FAISS’s retrieval mechanisms and LLM outputs, evaluating the impact of the feedback loop on system performance. By demonstrating the efficacy of this integrated approach within a GitHub Codespaces environment, this fun and innovative work contributes to the advancement of scalable, real-time language processing systems, with potential applications in personalized information retrieval, conversational for peer review, and AI recommendation systems. 
+This exploration dives into the interplay between FAISS’s retrieval mechanisms and LLM outputs, evaluating the impact of the feedback loop on system performance. By demonstrating the efficacy of this integrated approach within a GitHub Codespaces environment, this fun and innovative work contributes to the advancement of scalable, real-time language processing systems, with potential applications in personalized information retrieval, conversational for a review, and AI recommendation systems. 
 
-The **Dynamic-Adaptive-Feedback-Loop** continuously enhances system performance by incorporating reviewer interactions and feedback, leading to improved accuracy in literature retrieval and more relevant suggestions. By automating the process of retrieving related research and providing insightful analysis, this POC aims to optimize peer review workflows, making them more efficient and effective.
+The **Dynamic-Adaptive-Feedback-Loop** continuously enhances system performance by incorporating reviewer interactions and feedback, leading to improved accuracy in literature retrieval and more relevant suggestions. By automating the process of retrieving related research and providing insightful analysis, this POC aims to optimize review workflows, making them more efficient and effective.
 
 In addition, the **Self-Contained** nature of the LLM addresses critical concerns regarding security and privacy. By running the **Self-Contained LLM engine** within this POC, sensitive data remains within the controlled environment (such as LTHub LLM Sandbox), mitigating risks associated with data breaches and privacy impact assessments (PIA). This approach ensures that proprietary and confidential information is not transmitted over external networks, thus enhancing overall data security and privacy. 
 
 ![alt text](image.png)
-
-
-
 
 
 ## How-to Set Up a Contained LLM in GitHub Codespaces
@@ -48,8 +45,8 @@ In addition, the **Self-Contained** nature of the LLM addresses critical concern
 
 - create a new bash 
 
-- run: python ./faiss-llm-feedback.py [llm model] 
-    - ex. python ./faiss-llm-feedback.py llama3.1
+- run: python ./faiss-any-llm-feedback8.py llama3.1
+
 
 -------------------------------
 
@@ -81,7 +78,7 @@ _Prompt: tell more all about Remy grade history_
 
 -------------------------------
 
-_Prompt: As a peer of Remy, I'm Dang, and I’m delighted to give Remy’s extraordinary adventure an awesome review!_
+_Prompt: As a friend of Remy, I'm Dang, and I’m delighted to give Remy’s extraordinary adventure an awesome review!_
 
 ![alt text](image-7.png)
 

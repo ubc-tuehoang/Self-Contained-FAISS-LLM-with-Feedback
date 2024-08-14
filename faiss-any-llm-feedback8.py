@@ -111,6 +111,10 @@ if not check_port(PORT):
     print(f"\nPort {PORT} is not open. Please start the LLM engine.")
     sys.exit(1)  # Exit the program with a non-zero status code
 
+
+print(f"\n\nCheck for story in folder ./text_files_directory about Remy.")
+print(f"\nPrompt suggestions:\nwhat is this story about?\nis there a dragon?\ntell me more about Remy.\ncreate another adventure under the ocean for Remy.")
+
 # Interactive query input loop
 while True:
 

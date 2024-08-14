@@ -40,7 +40,7 @@ RUN wget $DOWNLOAD_URL -O install1.sh && \
     ./install1.sh
 
 # Create a directory named /app
-RUN mkdir ./text_files_directory
+##RUN mkdir ./text_files_directory
 
 # Install dependencies
 #COPY requirements.txt .
@@ -63,12 +63,15 @@ CMD [ "echo", "Successfully installed!" ]
 #app> ollama list
 ## should be empty
 
+#app> ollama run llama3 --verbose
+#(option)
 #app> ollama run llama3.1 --verbose
 #(option)
 #app> ollama run mistral --verbose
 
-## Create NEW bash
+## CREATE A NEW BASH
 ## curl commands for testing. 
 #> curl -X POST http://localhost:11434/api/generate -d '{  "model": "llama3.1",  "prompt":"What is water?"}'
-#> curl -X POST http://localhost:11434/api/generate -d '{  "model": "mistral",  "prompt":"What is water?"}'
+#> curl -X POST http://localhost:11434/api/generate -d '{  "model": "llama3",  "prompt":"What is water?"}'
 
+#> python ./faiss-any-llm-feedback8.py llama3.1
