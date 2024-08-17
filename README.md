@@ -16,7 +16,7 @@ The **Dynamic-Adaptive-Feedback-Loop** continuously enhances system performance 
 
 In addition, the **Self-Contained** nature of the LLM addresses critical concerns regarding security and privacy. By running the **Self-Contained LLM engine** within this POC, sensitive data remains within the controlled environment (such as LTHub LLM Sandbox), mitigating risks associated with data breaches and privacy impact assessments (PIA). This approach ensures that proprietary and confidential information is not transmitted over external networks, thus enhancing overall data security and privacy. 
 
-![alt text](image.png)
+![alt text](image-8.png)
 
 
 ## How-to Set Up a Contained LLM in GitHub Codespaces
